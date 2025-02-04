@@ -176,3 +176,25 @@ http://your-ec2-public-ip
 4. Check AWS CloudWatch for logs and metrics.
 
 
+**Step 9: Automate Pipeline with Webhooks**
+
+- In GitHub → Settings → Webhooks, add a webhook:
+  - Payload URL: http://your-jenkins-server/github-webhook/
+  - Content type: application/json
+  - Select "Just the push event"
+
+
+**Step 10: Validate Deployment**
+
+- Run docker ps on the EC2 instance to ensure the container is running.
+- Test the application by visiting the EC2 public IP.
+
+
+
+
+**Final Architecture**
+
+1. Developer pushes code to GitHub.
+2. Jenkins pulls code, builds Docker image, and pushes it to DockerHub.
+3. EC2 pulls the Docker image and deploys the container.
+4. AWS CloudWatch monitors logs and application health.
