@@ -1,6 +1,6 @@
 # Website-Monitoring-using-Cloud-Watch
 
-##CI/CD Pipeline for Web App using Docker, Jenkins, and AWS - Step-by-Step Guide##
+**CI/CD Pipeline for Web App using Docker, Jenkins, and AWS - Step-by-Step Guide**
 
 This guide will walk you through setting up a CI/CD pipeline for a Node.js web application using Jenkins, Docker, and AWS EC2. The pipeline will automate build, testing, and deployment while integrating GitHub version control and AWS CloudWatch monitoring.
 
